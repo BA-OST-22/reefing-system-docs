@@ -1,0 +1,25 @@
+% Some commands used in this file
+\newcommand{\package}{\emph}
+
+\chapter{Introduction}
+\section{Background}
+The association \acrfull{aris} brings together students from Swiss universities fascinated by space exploration. The association engages its members in engineering challenges by integrating theory and practice. Participating in rocket competitions worldwide, they are always looking to get an edge over their competition by deploying new technologies. Consequently, \acrshort{aris} is providing a platform where students develop and build parts for future rocket developments—offering help and guidance in a wide variety of theses.
+
+In order to reduce the drift of a sounding rocket’s descent, a multi-stage recovery system is required. Typically, a drogue chute is deployed at apogee, and a bigger main parachute is released close to the ground. If a parachute inflates too rapidly, it can cause extreme shock to the overall parachute and rigging system, causing it to malfunction. To keep the loads acting on it to a minimum, the descent speed needs to be reduced, but at the same time, the rocket needs to come down to earth as fast as possible to reduce its drift. Over the years, the rockets developed by \acrshort{aris} got bigger and heavier. For that reason, new methods are required to reduce loads during parachute deployment.
+
+Parachute reefing prevents the parachute from opening too rapidly by restricting the inflation of the canopy. Active reefing systems allow the main parachute to be deployed slowly at a predetermined altitude. By deploying the main parachute in a reefed state at apogee, a reefing system also allows using just one parachute instead of two. Because a reefed parachute generates only a fraction of the drag, the rocket descents with a high velocity. The parachute can then be fully opened at a low altitude, reducing the speed of impact with the ground. Flying with only one parachute substantially simplifies the overall recovery system.
+
+\newpage
+
+\section{Scope}
+The scope of the thesis is limited to the parachute skirt reefing technique and the corresponding line cutter. Therefore, this thesis does not cover all considerations for the parachute design and implementation.
+
+\section{Approach}
+To begin with, different line-cutting methods were investigated. Then, a selection was made according to the given requirements. A battery-powered hardware was developed around the reefing cutter, and an enclosure was designed and produced using a 3D printer. 
+
+Firmware was written to handle all aspects of the operation. A user interface for device configuration was developed, and simulations were written to validate the control software. Finally, a flight parser was created to visualize the collected data.
+
+The reefing system was tested over an extended period. First, cutting tests were performed to validate the reliability. Then, to round it off, flights performed with drones and rockets were used to test the whole system. 
+
+\section{Open-Source}
+From the beginning, it was decided that all aspects of the project would be released under an open-source license. The author is a huge supporter of open source and believes it will be the future of engineering. Building upon existing libraries and code under open source licenses allows for an accelerated design process. All documents and files for this project can be found on GitHub and are released under the \gls{gnu}. A short description of all the repositories can be found in the Appendix \ref{Data Archive}.

@@ -1,0 +1,33 @@
+\chapter{Summary \& Conclusion}
+To summarize, a fully comprehensive device has been developed. With it, parachute reefing lines can be separated during flight. A Kalman filter was designed and implemented on the hardware to estimate the velocity and altitude of the rocket. Additional software tools were created to simulate the state estimation and plot flight data. In order to change settings on the device, a user interface is presented. To protect the hardware from its surroundings, a sturdy enclosure was designed. Lastly, an extensive testing campaign was performed to assess the device's functionality.
+
+All requirements defined in the task definition have been satisfied. The only pending aspect is the usage of the telemetry data. The implementation of this feature has been neglected because the telemetry part on the primary flight computer is not fully implemented yet. However, this functionality can easily be added in the future if necessary.
+
+\section{Continuing Work}
+Although the designed reefing system provides a rich set of features, there are some aspects to improve and add.\\
+The following continuations are possible:
+
+\begin{itemize}
+		\item Testing the device on more rocket flights. The test results can help tune the system for accurate parachute disreefing. 
+		\item Adding the light sensor to the software. The sensor can provide information about the deployment point of the parachute.  
+		\item Support telemetry operation. The data from the rocket's main body is more accurate than the onboard data.
+		\item Periodically reset the zero altitude while waiting for the rocket to lift off. This is very important to reduce the drift of altitude before a flight. 
+		\item Cost reduction of the hardware. This can be achieved by removing unused parts like the thermocouple interface and ideal diode controller.
+		\item Investigate more powerful heating element options to separate the reefing line quicker.
+		\item Size and weight reduction by reducing battery size and case design. 
+\end{itemize}
+
+\section{Reflection \& Project Schedule}
+A detailed project schedule with the planned and actual working hours can be found in Appendix \ref{fig:project_schedule}.
+
+My time management during the project was excellent, all milestones were reached as scheduled, and all functions were implemented on time. At one point in the project cycle, I was even two weeks ahead of schedule. Some parts of the firmware turned out to be more complicated than expected, resulting in long workdays to move forward. The enclosure design was backtracked a few times to add improvements and reduce weight. Unfortunately, during the project's development phase, the report was put on hold. As a result, in the last few weeks, all my free time was spent working on the report. Overall I worked a lot more hours than initially targeted. Primarily the report required a lot more work than expected.   
+
+\section{Personal Reflection}
+
+In general, this thesis overall has been delightful. Within just a few weeks, I transformed an idea into a working product. The Reefing System is working as designed, and I am looking forward to seeing the device being used in large rockets. During the project, I could leverage my previous experience and build on it. I found it fascinating to learn more about all the parachute systems used in space flight and how reefing line cutters are implemented. Working with embedded systems is something I have always liked, and this project was no exception. Developing with real-time operating systems and complex logic is something I enjoy. 
+
+I had trouble with time management in past projects, so I made sure to develop a realistic timetable this time. Spending the extra time on the schedule has proven to be very advantageous as I was able to deliver all tasks on time. 
+
+One thing I was struggling with was the amount of text and images I needed to produce for the report. Typically these projects are done in pairs, reducing the workload on the documentation side.
+
+Altogether I am very proud of what I achieved in such a short time frame. 

@@ -1,0 +1,46 @@
+%\addtocontents{toc}{\protect\newpage}   % Start on new page in table of contents 
+\chapter{User Manual}
+This chapter describes the function and operation of the device, the system specifications and possible error scenarios with a potential cause of the problem. In addition, instructions are available for setting up the device and change the configuration.
+
+\section{Configuration}
+\subsection{System Setup}
+After production, the blank \gls{esp32}-S2 must be programmed with the latest firmware. This can be achieved by following the steps in Section \ref{Firmware Update}. Next, the system configuration as well as the \acrshort{fms}-frame filter configuration must be loaded onto the root directory of the mass storage device. Figure\;\ref{fig:fleet-monitor-root-directory} shows how the file structure should look like when plugged in to a \acrshort{pc} via the \acrshort{usb}-interface.
+
+\medskip
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=13cm]{images/File_Explorer}
+	\caption{Fleet-Monitor Root Directory}
+	\label{fig:fleet-monitor-root-directory}
+\end{figure}
+
+Furthermore, parameters in the system configuration file must be adjusted to the needs of the overall setup. This contains setting the host \acrshort{ip} address and port number, as well as the \acrshort{ssid} and password if the device should connect over WiFi. Additional options can be defined, please refer to Section \ref{System Configuration} for more information.
+\newpage
+
+\section{Specifications}
+\begin{center}
+    \begin{tabular}{p{6.4cm} p{6.4cm}}
+    %\hline
+    External Input Voltage          & 9\,V - 28\,V                      \\ %\hline
+    Power Consumption               & 2.5\,W                            \\ %\hline
+    Dimensions (L x W x D)          & 160 x 89 x 61\,mm                 \\ %\hline
+    Weight                          & 350\,g                            \\ %\hline
+    Water Resistance Rating         & IP67                              \\ %\hline
+    Power Connector                 & M12 R/A F                         \\ %\hline
+    Microprocessor                  & ESP32-S2                          \\ %\hline
+    LAN-Interface                   & 10\,Base-T / 100\,Base-TX         \\ %\hline
+    WLAN-Interface                  & 802,11b/g/n                       \\ %\hline
+    USB-Interface                   & USB 2.0 (Device)                  \\ %\hline
+    CAN-Interface                   & 250\,kbit/s (SAE J1939)           \\ %\hline
+    
+    \end{tabular}
+\end{center}
+
+\section{Designing a Parachute System for Reefing}
+
+
+\subsection{Parachute choice}
+
+\subsection{Reefing Line length}
+
+\subsection{Redundancy} \label{Hard Reset}

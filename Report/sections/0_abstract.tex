@@ -1,0 +1,31 @@
+\begin{abstract}
+The association Akademische Raumfahrt Initiative Schweiz (ARIS) brings together students from Swiss universities interested in space exploration. Several rockets have been built over the years for student competitions and experiments. The rockets built by ARIS are fully reusable, as they are recovered by parachutes.  With the rockets getting larger and heavier with each passing year, a solution to reduce the shock loads at parachute opening is needed. Consequently, the development of an active parachute reefing system was proposed.
+
+After evaluating many line-cutting methods, it was decided that a thermal
+solution would provide the best results. The reefing line is guided through a ceramic
+heating element and gets burned through at a target altitude. Once the reefing line is
+cut, the parachute can fully open.\newline
+Custom hardware was developed to drive the heating element, receive data over a
+telemetry link and compute sensor data. The system is based around an STM32F411
+microcontroller and all the software is written in C. Through the telemetry link; the
+reefing computer can receive commands to initiate the cut of the reefing line. In
+addition, a Kalman filter was developed to estimate the velocity and altitude of the
+rocket, allowing the reefing computer also to work fully autonomous. Through the
+USB interface, all relevant system settings can be changed by the user. An enclosure
+to house the electronics and heating element was designed and manufactured using a
+3D printer. With its small size, lightweight, and ease of use, the reefing system can be
+deployed in almost any size parachute.
+
+A comprehensive testing campaign was carried out to assess the system's functionality. Many cutting tests were conducted to determine the effectiveness and repeatability. To validate the state estimation, multiple drone flights were performed. In these tests, an FPV drone was used to accelerate upwards with up to 4g and reach altitudes of around 100 meters. Finally, a full-scale rocket flight of the whole system was conducted. The reefing system cut the line at parachute opening, proving its effectiveness.
+\end{abstract}
+
+\newpage
+
+\chapter{Acknowledgements}
+
+The completion of this project could not have been possible without the expertise I received throughout the Thesis. I thank all people who helped me during the long process. Especially Dr. Andreas Breitenmoser, who gave me the opportunity to work on this topic and the support I received throughout the project. 
+
+I would like to thank Jonas Binz, who helped me with the design of the state estimation, and for the time he took to answer all my questions. 
+
+Last but not least, gratitude goes out to Florian Baumgartner, who provided his support for the enclosure design.
+
